@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Imagenes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Imagenes con tensores</h1>
+    <input type="file" id="image-upload" accept="image/*">
+    <div id="original-image-container">
+        <h2>imagen original</h2>
+        <img id="original-image" src="" alt="Original Image">
+    </div>
+    <div id="processed-images">
+        <h2>Imagen procesada</h2>
+        <canvas id="cropped-resized-canvas"></canvas>
+        <h3>Recortada y redimensionada</h3>
+        <canvas id="mirrored-canvas"></canvas>
+        <h3>Imagen reflejada</h3>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="script.js"></script>
+</body>
+</html>
